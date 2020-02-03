@@ -23,6 +23,8 @@ package basic;
 
 import java.util.Scanner;
 
+import static basic.MyScanner.myScanner_int;
+
 
 public class Q3_Insert_Sort {
     private static Scanner sc = new Scanner(System.in);
@@ -68,18 +70,10 @@ public class Q3_Insert_Sort {
     }
 
     private static void Q2() {
-        int n, i, j, temp;
-        int[] array = new int[101];
+        int i, j, temp;
+        int[] array = myScanner_int();
+        int n = array.length;
 
-        System.out.println("몇 개의 숫자인지 입력하세요.");
-        System.out.print("입력>");
-        n = sc.nextInt();
-
-        System.out.println("숫자를 입력하세요.");
-        System.out.print("입력>");
-        for (i = 0; i < n; i++) {
-            array[i] = sc.nextInt();
-        }
         for (i = 0; i < n; i++) {
             j = i;
             while (j > 0 && array[j - 1] > array[j]) {
