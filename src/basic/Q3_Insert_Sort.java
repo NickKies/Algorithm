@@ -71,7 +71,7 @@ public class Q3_Insert_Sort {
 
     private static void Q2() {
         int i, j, temp;
-        int[] array = myScanner_int();
+        int[] array = MyScanner.myScanner_int();
         int n = array.length;
 
         for (i = 0; i < n; i++) {
