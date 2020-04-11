@@ -11,10 +11,9 @@ import java.util.Map;
  * 예제)
  *
  * Input: [2, 5, 6, 1, 10], 타겟 8
- *
  * Output: [0, 2] // 배열[0] + 배열[2] = 8
  */
-public class Q8_HashMap_constainsKey {
+public class Q8_HashMap_containsKey {
     private static int[] intArry = new int[2];
     public static void main(String[] args) {
         int[] input = {2, 5, 6, 1, 10};
